@@ -72,6 +72,7 @@ hr {
 .memberDiv {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	grid-column: 2 / span 2;
 	align-items: center;
 }
 
@@ -80,8 +81,13 @@ hr {
 	object-fit: cover;
 }
 
-.memberList {
-	font-size: 3rem;
+.nameDiv {
+	grid-template-rows: repeat(5, 1fr);
+	font-family: 'Akira Expanded';
+}
+
+.chae, .sakura, .yunjin, .kazuha, .eunchae {
+	font-size: 2.8rem;
 	grid-area: 1/2/5/-1;
 	margin-left: -1em;
 }
@@ -89,14 +95,13 @@ hr {
 .memberLink {
 	text-decoration: none;
 	margin: 0;
-
 }
 
-.memberLink:hover {
-		font-family: 'Akira Expanded';
-
-/*	font-weight: bold;*/
+.bottomLine {
+	position: absolute;
+	margin: 100px auto auto 100px;
 }
+
 
 
 
