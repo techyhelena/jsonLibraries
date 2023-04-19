@@ -1,0 +1,105 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+
+html {
+	font-family: 'Manrope', sans-serif; 
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #101010;
+}
+
+@font-face {
+	font-family: 'Akira Expanded';
+	src: url(Akira Expanded Demo.otf);
+}
+
+/* Navbar */
+.navbar {
+	display: flex;
+	justify-content: center;
+	padding: 2px;
+	background-color: #101010;
+	position: fixed;
+	width: 100%;
+}
+
+.navbar h1 {
+	font-family: 'Akira Expanded';
+}
+
+a:hover {
+	color: #A60016;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: #FCFCFC;
+}
+
+/* header */
+.heading {
+	display: grid;
+	padding-top: 5em;
+	grid-template-columns: 2fr 2fr;
+	gap: 2px;
+
+}
+
+hr {
+	background-color: #FFF;
+	border: none;
+	height: 10px;
+	width: 40em;
+	margin: auto;
+}
+
+.headText {
+	font-family: 'Akira Expanded';
+	font-weight: bolder;
+	font-size: 4em;
+	margin-right: 15px;
+	text-align: right;
+	color: white;
+}
+
+.memberDiv {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+
+.headerImg {
+	width: 100%;
+	object-fit: cover;
+}
+
+.memberList {
+	font-size: 3rem;
+	grid-area: 1/2/5/-1;
+	margin-left: -1em;
+}
+
+.memberLink {
+	text-decoration: none;
+	margin: 0;
+
+}
+
+.memberLink:hover {
+		font-family: 'Akira Expanded';
+
+/*	font-weight: bold;*/
+}
+
+
+
+
+
+
