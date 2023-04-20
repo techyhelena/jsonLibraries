@@ -106,42 +106,28 @@ hr {
 /* content (JSON STUFF) */
 
 #memberContainer {
-	display: flex;
-	flex-direction: column;
-
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.leftContainer, .rightContainer {
-	display: flex;
-	margin-top: 10%;
-}
 
 .name {
 	font-family: 'Akira Expanded';
-	font-size: 3em;
-	transform: rotate(90deg);
-	margin-top: 10em;
+	font-size: 2em;
+/*	transform: rotate(90deg);*/
+	margin-top: 5em;
 	margin-bottom: 0;
-/*	width: 20%;*/
 }
 
 .memberPic {
 	object-fit: cover;
-	width: 40%;
+	width: 50%;
 }
 
-.leftContainer{
-/*	justify-content: space-around;*/
-/*	grid-template-rows: repeat(2, 1fr);*/
-/*	grid-column: 1 / span 2;*/
 
-
-}
-.rightContainer {
-	flex-direction: column;
-/*	grid-template-rows: repeat(12, 1fr);*/
-
-}
 
 
 

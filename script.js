@@ -21,7 +21,7 @@ let memberDatabase = [
 	"position": "Vocalist", 
 	"mbti": "INFJ",
 	"nationality": "Japanese",
-	"hobby": "Watching dramas, reading books, guitar, and composing music"
+	"hobby": "Watching dramas and reading books"
 },
 {
 	"name": "Huh Yunjin",
@@ -84,53 +84,53 @@ function updateInfo(incomingJSON) {
 	memberContainer.appendChild(newContainer);
 
 	// content 
-	let contentContainer = document.createElement("DIV");
-	contentContainer.classList.add("rightContainer");
+	// let contentContainer = document.createElement("DIV");
+	// contentContainer.classList.add("rightContainer");
 
-	memberContainer.appendChild(contentContainer);
+	// memberContainer.appendChild(contentContainer);
 
 
 	let newBirthday = document.createElement("P");
 	newBirthday.classList.add("birthday");
 	newBirthday.innerText = "Birthday: " + incomingJSON['birthday'];
 	newContainer.appendChild(newBirthday);
-	contentContainer.appendChild(newBirthday); // adding p into new div
-	// newContainer.appendChild(newBirthday); // adding p into new div
+	// contentContainer.appendChild(newBirthday); // adding p into new div
+	newContainer.appendChild(newBirthday); // adding p into new div
 
 
 
 	let newbirthPlace = document.createElement("P");
 	newbirthPlace.classList.add("birthplace");
 	newbirthPlace.innerText = "Birthplace: " + incomingJSON['birthplace'];
-	contentContainer.appendChild(newbirthPlace); // adding p into new div
-	// newContainer.appendChild(newbirthPlace); // adding p into new div
+	// contentContainer.appendChild(newbirthPlace); // adding p into new div
+	newContainer.appendChild(newbirthPlace); // adding p into new div
 
 	let newMBTI = document.createElement("P");
 	newMBTI.classList.add("mbti");
 	newMBTI.innerText = "MBTI: " + incomingJSON['mbti'];
-	contentContainer.appendChild(newMBTI);
-	// newContainer.appendChild(newMBTI); // adding p into new div
+	// contentContainer.appendChild(newMBTI);
+	newContainer.appendChild(newMBTI); // adding p into new div
 
 
 	let newPosition = document.createElement("P");
 	newPosition.classList.add("position");
 	newPosition.innerText = "Position: " + incomingJSON['position'];
-	contentContainer.appendChild(newPosition);
-	// newContainer.appendChild(newPosition); // adding p into new div
+	// contentContainer.appendChild(newPosition);
+	newContainer.appendChild(newPosition); // adding p into new div
 
 
 	let newNationality = document.createElement("P");
 	newNationality.classList.add("nationality");
 	newNationality.innerText = "Nationality: " + incomingJSON['nationality'];
-	contentContainer.appendChild(newNationality);
-	// newContainer.appendChild(newNationality); // adding p into new div
+	// contentContainer.appendChild(newNationality);
+	newContainer.appendChild(newNationality); // adding p into new div
 
 
 	let newHobby = document.createElement("P");
 	newHobby.classList.add("hobby");
 	newHobby.innerText = "Hobby: " + incomingJSON['hobby'];
-	contentContainer.appendChild(newHobby);
-	// newContainer.appendChild(newHobby); // adding p into new div
+	// contentContainer.appendChild(newHobby);
+	newContainer.appendChild(newHobby); // adding p into new div
 
 
 
