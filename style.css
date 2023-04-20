@@ -63,6 +63,7 @@ hr {
 
 .headText {
 	font-family: 'Akira Expanded';
+	text-transform: uppercase;
 	font-weight: bolder;
 	font-size: 4em;
 	margin-right: 15px;
