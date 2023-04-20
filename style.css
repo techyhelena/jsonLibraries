@@ -6,6 +6,7 @@
 
 html {
 	font-family: 'Manrope', sans-serif; 
+	color: #FCFCFC;
 }
 
 html, body {
@@ -101,6 +102,48 @@ hr {
 	position: absolute;
 	margin: 100px auto auto 100px;
 }
+
+/* content (JSON STUFF) */
+
+#memberContainer {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.leftContainer, .rightContainer {
+	display: flex;
+	margin-top: 10%;
+}
+
+.name {
+	font-family: 'Akira Expanded';
+	font-size: 3em;
+	transform: rotate(90deg);
+	margin-top: 10em;
+	margin-bottom: 0;
+/*	width: 20%;*/
+}
+
+.memberPic {
+	object-fit: cover;
+	width: 40%;
+}
+
+.leftContainer{
+/*	justify-content: space-around;*/
+/*	grid-template-rows: repeat(2, 1fr);*/
+/*	grid-column: 1 / span 2;*/
+
+
+}
+.rightContainer {
+	flex-direction: column;
+/*	grid-template-rows: repeat(12, 1fr);*/
+
+}
+
+
 
 
 
